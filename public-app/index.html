@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="https://cdn.socket.io/4.5.0/socket.io.min.js"
+        integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.js"
+        integrity="sha512-+tu0+vUXyZX+S51npa//IN6znNTLZsBoy8mXn9WzHxfBqYMy6gOzzfTK0VqZf9O171RY9AJviHDokCnvEq8+1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <form>
+            <div>
+              <label for="name" class="form-label">Name:</label>
+              <input type="text" id="name" class="form-input" required>
+            </div>
+            <div>
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" id="email" class="form-input" required>
+            </div>
+            <div>
+              <label for="dob" class="form-label">Date of birth:</label>
+              <input type="date" id="dob" class="form-input" required>
+            </div>
+            <div>
+              <label for="phone" class="form-label">Phone:</label>
+              <input type="tel" id="phone" class="form-input" required>
+            </div>
+            <div>
+              <input type="checkbox" id="privacy-agreement" class="form-checkbox" required>
+              <label for="privacy-agreement" id="privacy-agreement-text">I agree to the data privacy policy.</label>
+            </div>
+            <button type="submit" id="submit-btn" class="form-btn" disabled>Submit my data</button>
+    </form>
+    
+        <script src="sketch.js" async defer></script>
+</body>
+
+</html>
